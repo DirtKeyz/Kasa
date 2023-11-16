@@ -1,0 +1,103 @@
+@use "../../sass/variables.scss" as *;
+
+.page_logement {
+    margin: 1.5rem;
+    color: $primary-color;
+
+    & li {
+        list-style-type: none;
+        padding-bottom: 0.2em;
+    }
+
+    & .title_logement {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0.2rem;
+    }
+
+    & .subtitle_logement {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0.4rem;
+    }
+
+    & .barre {
+        margin-top: 1.5rem;
+    }
+}
+
+.infos_proprietaire {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    & .identite {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        & .proprietaire {
+            font-size: 17px;
+            text-align: right;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .page_logement {
+
+        margin-inline: 3rem;
+
+
+        & .title_logement {
+            font-size: 30px;
+            line-height: 51px;
+        }
+
+        & .subtitle_logement {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 1rem;
+        }
+
+        & .global_infos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & .infos_proprietaire {
+            flex-direction: column-reverse;
+        }
+
+        & .descr-equip {
+
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            padding-bottom: 1rem;
+
+            & .barre {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+
+    }
+
+    .infos_proprietaire {
+        & .identite {
+            & .proprietaire {
+                font-size: 20px;
+            }
+        }
+
+
+    }
+
+}

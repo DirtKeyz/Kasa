@@ -1,0 +1,67 @@
+.carrousel {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+
+    & .container {
+        width: inherit;
+    }
+
+    & .image {
+        display: none;
+    }
+
+    & .active {
+        display: block;
+        width: inherit;
+        height: 255px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .infoSlides {
+        display: none;
+    }
+
+    & .button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: white;
+        font-size: 3.5rem;
+        cursor: pointer;
+
+        &.previous {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .carrousel {
+
+        .active {
+            height: 415px;
+        }
+
+
+        .infoSlides {
+            font-size: 18px;
+            display: block;
+            bottom: 25px;
+            color: white;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

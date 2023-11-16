@@ -1,0 +1,65 @@
+@use "../../sass/variables.scss" as *;
+
+.barre_complete {
+    width: 100%;
+
+    & .barre {
+        display: flex;
+        background-color: $primary-color;
+        width: 100%;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+        font-size: 13px;
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    & .fa-chevron-down {
+        transition: transform 0.2s ease-out;
+    }
+
+    &.open .fa-chevron-down.rotate {
+        transform: rotate(-180deg);
+    }
+
+    & .barreContent {
+        background-color: $tertiary-color;
+        font-size: 13px;
+        color: $primary-color;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        line-height: 20px;
+        animation: Opening 0.6s ease-in-out;
+
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .barre_complete {
+        & .barre {
+            font-size: 20px;
+        }
+
+        & .barreContent {
+            font-size: 18px;
+        }
+    }
+}
+
+
+@keyframes Opening {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  height: 209px;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+
+  & .contenu_footer {
+    padding-top: 66px;
+  }
+
+  & .logo_footer {
+    width: 122px;
+  }
+}

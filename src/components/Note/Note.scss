@@ -1,0 +1,13 @@
+@use "../../sass/variables.scss" as *;
+
+.notation {
+    & .fa-star {
+        font-size: 15px;
+        padding-inline: 0.2rem;
+    }
+
+    & .star-empty {
+        color: $star-empty;
+    }
+
+}

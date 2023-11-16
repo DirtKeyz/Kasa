@@ -1,0 +1,39 @@
+@use "../../sass/variables.scss" as *;
+
+.error {
+    color: $primary-color;
+    text-align: center;
+
+    & h1 {
+        font-size: 96px;
+        font-weight: 900;
+        padding: 113px 0;
+    }
+
+    & h2 {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 113px;
+    }
+
+    & a {
+        color: $primary-color;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .error {
+        & h1 {
+            font-size: 288px;
+        }
+
+        & h2 {
+            font-size: 36px;
+        }
+
+        & a {
+            font-size: 18px;
+        }
+    }
+}

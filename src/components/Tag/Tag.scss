@@ -1,0 +1,32 @@
+@use "../../sass/variables.scss" as *;
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+
+    & .tag {
+        color: white;
+        background-color: $primary-color;
+        border-radius: 10px;
+        width: auto;
+        height: 100%;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.3rem;
+        text-wrap: nowrap;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .tags {
+        & .tag {
+            font-size: 14px;
+        }
+    }
+}

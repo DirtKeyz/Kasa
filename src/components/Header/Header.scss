@@ -1,0 +1,56 @@
+@use "../../sass/variables.scss" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 1.5rem;
+  align-items: center;
+
+  & .logo_header {
+    width: 145px;
+  }
+
+  & ul {
+    display: flex;
+  }
+
+  & li {
+    list-style: none;
+    margin-left: 20px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  & a.active {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    font-size: 24px;
+    margin-inline: 3rem;
+
+    & .logo_header {
+      width: 210px;
+    }
+
+    & li {
+      margin-left: 57px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .liens {
+    text-transform: uppercase;
+  }
+
+}

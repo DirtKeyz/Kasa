@@ -1,0 +1,14 @@
+.barres {
+    margin: 1rem;
+
+    & .barre {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (width>768px) {
+    .barres {
+        padding-inline: 5rem;
+    }
+
+}
