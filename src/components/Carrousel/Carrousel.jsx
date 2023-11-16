@@ -41,9 +41,11 @@ function Carrousel() {
           <i className="fa-solid fa-chevron-right"></i>
         </button>
       )}
-      <div className="infoSlides">
-        {index + 1}/{slides.length}
-      </div>
+      {showArrows && (
+        <div className="infoSlides">
+          {index + 1}/{slides.length}
+        </div>
+      )}
     </div>
   );
 }

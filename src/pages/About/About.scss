@@ -1,12 +1,12 @@
 .barres {
-    margin: 1rem;
+    margin: 1.5rem;
 
     & .barre {
         margin-top: 1.5rem;
     }
 }
 
-@media screen and (width>768px) {
+@media screen and (min-width: 768px) {
     .barres {
         padding-inline: 5rem;
     }

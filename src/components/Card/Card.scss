@@ -3,7 +3,7 @@
 .card {
   position: relative;
   border-radius: 10px;
-  height: 340px;
+  height: 255px;
   box-shadow: $shadow;
 
   & .overlay {
@@ -32,10 +32,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
   .card {
-    height: 275px;
+    height: 340px;
   }
 
 }
