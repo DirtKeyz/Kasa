@@ -16,11 +16,11 @@
         justify-content: space-between;
     }
 
-    & .fa-chevron-down {
+    & .fa-chevron-up {
         transition: transform 0.2s ease-out;
     }
 
-    &.open .fa-chevron-down.rotate {
+    &.open .fa-chevron-up.rotate {
         transform: rotate(-180deg);
     }
 

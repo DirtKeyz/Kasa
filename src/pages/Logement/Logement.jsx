@@ -5,9 +5,9 @@ import Tag from "../../components/Tag/Tag";
 import Error from "../Error/Error";
 import Proprio from "../../components/Proprio/Proprio";
 import Note from "../../components/Note/Note";
+import Carrousel from "../../components/Carrousel/Carrousel";
 import db from "../../data/logements.json";
 import { useParams } from "react-router-dom";
-import Carrousel from "../../components/Carrousel/Carrousel";
 
 function Logement() {
   //recuperation de la bonne fiche logement et renvoi sur 404 si ID inexistant
@@ -26,12 +26,12 @@ function Logement() {
 
   return (
     <div className="page_logement">
-      <Carrousel />
+      <Carrousel props={log} />
       <div className="global_infos">
         <div className="location">
           <div className="title_logement">{log.title}</div>
           <div className="subtitle_logement">{log.location}</div>
-          <Tag />
+          <Tag props={log} />
         </div>
         <div className="infos_proprietaire">
           <div className="notation">
@@ -39,9 +39,9 @@ function Logement() {
           </div>
           <div className="identite">
             <div className="proprietaire">
-              <Proprio />
+              <Proprio props={log} />
             </div>
-            <Badge />
+            <Badge props={log} />
           </div>
         </div>
       </div>

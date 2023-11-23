@@ -1,12 +1,8 @@
 import "./Carrousel.scss";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
-import db from "../../data/logements.json";
 
-function Carrousel() {
-  const { id } = useParams();
-  const log = db.find((item) => item.id === id);
-  const slides = log.pictures;
+function Carrousel({ props }) {
+  const slides = props.pictures;
   const [index, setIndex] = useState(0);
 
   const next = () => {

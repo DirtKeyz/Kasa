@@ -13,9 +13,7 @@ function Barre({ barreTitle, barreContent }) {
       <div className={`barre_complete ${isOpen ? "open" : ""}`}>
         <div className="barre" onClick={functionToggle}>
           <p className="barreTitle">{barreTitle}</p>
-          <i
-            className={`fa-solid fa-chevron-down ${isOpen ? "rotate" : ""}`}
-          ></i>
+          <i className={`fa-solid fa-chevron-up ${isOpen ? "rotate" : ""}`}></i>
         </div>
         {isOpen && <p className="barreContent">{barreContent}</p>}
       </div>

@@ -1,14 +1,9 @@
 import "./Tag.scss";
-import db from "../../data/logements.json";
-import { useParams } from "react-router-dom";
 
-function Tag() {
-  const { id } = useParams();
-  const log = db.find((item) => item.id === id);
-
+function Tag({ props }) {
   return (
     <div className="tags">
-      {log.tags.map((tag, i) => (
+      {props.tags.map((tag, i) => (
         <div key={i} className="tag">
           {tag}
         </div>
